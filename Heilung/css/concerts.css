@@ -1,0 +1,42 @@
+body {
+  
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.concerts-name {
+  /* font-family: 'Suez One', serif; */
+  color: #fff;
+  /* letter-spacing: 3px; */
+  text-align: center;
+}
+
+.month-year {
+  margin: 15px 0;
+  font-size: 25px;
+  font-family: 'Suez One', serif ;
+}
+.table {
+  margin-left: 32px;
+  
+}
+.row:first-child {
+  border-top: 1px solid #fff;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 6px;
+}
+.add-to-cart {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 900;
+  padding: 0 48px;
+}
+.heading, .day-month, .city {
+  font-weight: bold;
+}
+
