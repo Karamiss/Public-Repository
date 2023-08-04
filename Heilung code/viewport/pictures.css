@@ -1,0 +1,91 @@
+
+.title {
+  text-align: center;
+}
+
+
+
+.viewport1, .viewport2, .viewport3,
+.viewport4, .viewport5, .viewport6 {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 40px ; /*отступ от другого блока*/
+}
+
+.list {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.item {
+  height: 224px;
+  width: 125px;
+  flex-shrink: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* #block  {
+  overflow-x: hidden;
+  list-style: none;
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+} */
+
+.list {
+  overflow-x: hidden; /*убираем к х*ям scroll*/
+  list-style: none;
+  /* border: 5px solid #fff; */
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 720px;
+  
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 32px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 1);
+}
+
+/*цветная хуйнюшка*/
+.item:nth-child(4n + 1) {
+  background-color: #facd3d;
+}
+.item:nth-child(4n + 2) {
+  background-color: #5626c4;
+}
+.item:nth-child(4n + 3) {
+  background-color: #e60576;
+}
+.item:nth-child(4n + 4) {
+  background-color: #2cccc3;
+}
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
