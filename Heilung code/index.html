@@ -29,9 +29,9 @@
 
 
   <!-- ТЕСТОВЫЙ КОД | testcode-->
-  <div class="wrapper">
+  <section class="wrapper">  <!-- почитай про семантические теги. тег section для каждого смыслового блока-->
     <div class="video_background" >
-      <img src="../IMG/Screenshot1.png" width="1720" height="742" >
+      <img src="../IMG/Screenshot1.png" width="1720" height="742" > <!-- проверь путь к картинке. либо имя. у меня оно не отображается-->
     </div>
   
     <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
@@ -50,7 +50,7 @@
         <li class="menu-item" role="none"><a class="menu-link" href="#" role="menuitem" tabindex="-1">Контакты</a></li>
       </ul>
     </nav>
-  </div>
+  </section>
   
 
 
@@ -69,10 +69,10 @@
 <!-- video_background.css | Блок с видео -->
 
   <!-- css-concerts.css | Концерты  -->
-  <div class="concerts">
+  <section class="concerts">
     <h2 class="concerts-name">Concerts</h2>
-    <div class="month-year">May 2023</div>
-    <div class="table">
+    <p class="month-year">May 2023</p>  <!-- там где текст улчше сипользовать тег p  -->
+    <div class="table"> <!-- конкретно в случае таблицы с расписанием не уверена, но сейчас вроде как тег table дял таблиц не используется. они просто рисуются тегами p внутри div. и потом им добавляется стилизация таблицы. я так понимаю это делается для удобства  -->
       <div class="row">
         <div class="date">
           <div class="day-month">may 11</div>
@@ -149,19 +149,19 @@
         <button class="add-to-cart">buy ticket</button>
       </div>
     </div>
-  </div>
+  </section>
   
  
 
 
   <!-- Фотографии с концертов | photos.css -->
   <!-- Блок с изображениями №1 -->
-  <div class="viewport1">
+  <section class="viewport1">
     <h2 class="title">Заголовок</h2>
-    <div class="list" id="block1">
-      <div class="item">
-        <img width="100%" src="./IMG/Icon-png.png" alt="">
-      </div>
+    <ul class="list" id="block1">   <!-- обертку повторяющихся элементов лучше помещать в тег ul -->
+      <li class="item">  <!-- а сами повторяющиеся элементы помещать в тег li. опять же для семантики -->
+        <img width="100%" src="./IMG/Icon-png.png" alt=""> <!-- в изображении желательно указывать и высоту ширину -->
+      </li>
       <div class="item">
         <img width="100%" src="./IMG/Icon-png.png" alt="">
       </div>
@@ -183,8 +183,8 @@
       <div class="item">
         <img width="100%" src="./IMG/Icon-png.png" alt="">
       </div> 
-    </div>
-  </div>
+    </ul>
+  </section>
 
   <!-- Блок с изобржениями №2 -->
   <div class="viewport2">
